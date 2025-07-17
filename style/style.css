@@ -7,7 +7,8 @@
   font-style: normal;
 }
 body{
-    
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .feature-cards,.feature-list {
     max-width: 1440px;
@@ -108,9 +109,12 @@ body{
 }
 
 /* feature card style */
+.card-features-pic{
+    width: 100%;
+}
 
 .feature-cards{
-    gap: 100px;
+    gap: 120px;
 }
 .featurd-btn{
     margin-top: -80px;
@@ -125,27 +129,45 @@ body{
 .card-container-title{
     border-left: 4px solid #FF900E;
     padding-left: 15px;
+    margin-top: 50px;
 
 }
 
 .feature-card{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 5px 20px 10px 20px;
+    margin-top: 20px;
 }
 /* fact card style */
-.fact-section{
-    text-align: center;
+.fact-section,
+.fact-card,
+.sponsors-img{
+    /* text-align: center; */
+    margin-top: 100px;
 }
 .fact-card{
     gap: 100px;
-    justify-content: center;
+    justify-content: space-around;
+    
 }
+.card{
+    width: 240px;
+    height: 240px;
+    border: 2px solid bisque;
+    text-align: center;
+    padding-top: 50px;
 
-
+}
+.card-no{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 0;
+}
 
 
 .sponsors{
     text-align: center;
+    margin: 100px auto;
 }
 .sponsors-img{
     justify-content: center;
@@ -154,7 +176,56 @@ body{
 
 
 footer{
-    text-align: center;
+    /* text-align: center;
+    padding: 150px auto; */
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 150px auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.sponsors-img{
+    width: 100%;
+}
+/* Responsive media */
+
+@media screen and (max-width: 576px){
+    .nav-section,
+    .list-items,
+    .feature-list,
+    .feature-cards,
+    .fact-card,
+    .sponsors-img{
+        flex-direction: column;
+    }
+
+    .feature-images{
+        grid-template-columns:repeat(1,1fr) ;
+    }
+    .fact-card{
+        padding-left: 100px;
+        
+        
+    }
+    .feature-cards,
+    .sponsors,
+    .fact-title,
+    .fact-test{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    footer{
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+
+    }
+    .features-content{
+        margin: auto 0;
+    }
+
+}
+
