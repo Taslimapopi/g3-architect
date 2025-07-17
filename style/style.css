@@ -7,8 +7,12 @@
   font-style: normal;
 }
 body{
+    
+}
+.feature-cards,.feature-list {
     max-width: 1440px;
     margin: 0 auto;
+
 }
 
 /* shared style */
@@ -29,6 +33,10 @@ body{
  }
 .font-style-01{
     color: rgba(19, 19, 19, 1);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.bold-heading45{
     font-size: 2.8rem;
     font-weight: 700;
 }
@@ -70,7 +78,8 @@ body{
     margin-bottom: 45px;
     /* padding-bottom: 45px;
     padding-top: 45px; */ 
-    padding: 30px;
+    /* padding: 30px; */
+    margin: 0 auto;
     
 }
 .banner-content{
@@ -101,5 +110,51 @@ body{
 /* feature card style */
 
 .feature-cards{
-    gap: 80px;
+    gap: 100px;
+}
+.featurd-btn{
+    margin-top: -80px;
+    margin-left: -80px;
+    border-radius: 8px;
+}
+.feature-btn{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.card-container-title{
+    border-left: 4px solid #FF900E;
+    padding-left: 15px;
+
+}
+
+.feature-card{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 5px 20px 10px 20px;
+}
+/* fact card style */
+.fact-section{
+    text-align: center;
+}
+.fact-card{
+    gap: 100px;
+    justify-content: center;
+}
+
+
+
+
+.sponsors{
+    text-align: center;
+}
+.sponsors-img{
+    justify-content: center;
+    gap: 100px;
+}
+
+
+footer{
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
